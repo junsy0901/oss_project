@@ -1,0 +1,261 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+/* 요소 속성 초기화 */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* 요소 속성 부여 */
+body {
+  background-color: #1e1e1e;
+}
+
+nav > ul {
+  /* nav */
+
+  width: 1920px;
+  height: 65px;
+  left: 0px;
+  top: 4px;
+}
+nav > ul > li {
+  /* Group 3 */
+  display: inline-block;
+
+  width: 150px;
+  height: 34px;
+  left: 246px;
+  top: 15px;
+
+  background: #fbd043;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+
+  margin: 10px 20px 10px 20px;
+}
+
+nav > ul > .on {
+  background: #638ee3;
+}
+
+nav > ul > li > a {
+  /* Home */
+
+  text-align: center;
+
+  width: 150px;
+  height: 34px;
+
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  color: #000000;
+}
+
+.headertxt {
+  /* DEVELOPER */
+
+  width: 99vw;
+  height: 150px;
+  margin: 2vh auto;
+
+  font-family: "Notable";
+  font-style: normal;
+  font-weight: 400;
+  line-height: -10px;
+  font-size: 150px;
+  display: flex;
+  align-items: flex-end;
+
+  color: #ffffff;
+}
+
+.container {
+  /* section */
+  box-sizing: border-box;
+
+  width: 98vw;
+  height: 340px;
+
+  position: absolute;
+  left: 50%;
+  margin: 0 -49vw;
+  border: 1px solid #ffffff;
+  background: rgb(30, 30, 30);
+  background: linear-gradient(
+    180deg,
+    rgba(30, 30, 30, 0.5) 0%,
+    rgba(99, 99, 245, 0.5) 100%
+  );
+}
+
+.container > * {
+  display: inline-block;
+
+  width: 20vw;
+  height: 160px;
+  margin: 60px 3vw 0 3vw;
+}
+
+.container p {
+  width: 132px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 24px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  color: #ffffff;
+}
+
+a svg {
+  width: 132px;
+}
+
+a svg path {
+  fill: transparent;
+  stroke: white;
+  stroke-width: 2;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: -1000;
+  transition: all 4s;
+}
+a:hover svg path {
+  stroke-dashoffset: 0;
+}
+
+.cloud1 {
+  width: 100vw;
+
+  position: fixed;
+  left: 0;
+
+  margin: 45vh auto;
+  z-index: -1;
+  /* 애니메이션 추가 */
+  animation: moveCloud 60s linear infinite;
+}
+
+.cloud2 {
+  width: 100vw;
+
+  position: fixed;
+  left: -100vw;
+
+  margin: 45vh auto;
+  z-index: -1;
+  /* 애니메이션 추가 */
+  animation: moveCloud 60s linear infinite;
+}
+
+/* 키프레임 정의 */
+@keyframes moveCloud {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+footer * {
+  color: #ffffff;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+.me {
+  width: 29vw;
+  position: fixed;
+  bottom: 0;
+  right: 5px;
+}
+
+/* 모달 스타일 */
+.modal {
+  display: none; /* 모달 숨김 */
+  position: fixed; /* 고정 위치 */
+  z-index: 1; /* 다른 요소보다 위에 표시 */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* 배경색 및 투명도 설정 */
+}
+
+.modal-content {
+  background: rgb(30, 30, 30);
+  background: linear-gradient(
+    180deg,
+    rgb(30, 30, 30) 0%,
+    rgb(99, 99, 245) 100%
+  );
+  margin: 10% 0 0 25%; /* 모달 중앙 정렬 */
+  position: fixed; /* 고정 위치 */
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  height: 50%;
+}
+.modal-img {
+  width: 1200px;
+  height: 675px;
+}
+.modal-text-head {
+  float: left;
+  margin: 20px 0;
+  width: 100%;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  font-family: "NanumSquareNeo-Variable";
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  margin: -20px -10px 0 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#container-cat {
+  width: 300px;
+  height: 200px;
+  margin: 0 0 0 25%;
+  background-color: #000000;
+  background-image: url("../img/chipi_1.jpg");
+  background-size: cover;
+}
+
+#container-cat.hover {
+  background-image: url("../img/chipi_2.jpg");
+}

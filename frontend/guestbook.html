@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GuestBook Junsy</title>
+    <link rel="stylesheet" href="CSS/style_gb.css" />
+    <script defer src="JS/guestbook.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!--폰트 임포트-->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Notable&display=swap");
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li class="on"><a href="#">GuestBook</a></li>
+          <li><a href="career.html">Career</a></li>
+        </ul>
+      </nav>
+      <div class="headertxt">GuestBook</div>
+    </header>
+    <div class="wrap">
+      <div style="width: 903px; height: 784px; position: relative">
+        <div class="container-background">
+          <div class="line">
+            <div class="guest-wrap" id="input">
+              <span class="name">
+                <input
+                  type="text"
+                  class="guest-input"
+                  placeholder="enter your name"
+                />
+              </span>
+              <button class="add-btn">등록</button>
+              <div class="text">
+                <textarea
+                  placeholder="enter text"
+                  cols="119"
+                  rows="10"
+                ></textarea>
+              </div>
+            </div>
+            <div id="guests"></div>
+          </div>
+        </div>
+        <div class="cloud1">
+          <img src="img/cloud.svg" />
+        </div>
+        <div class="cloud2">
+          <img src="img/cloud.svg" />
+        </div>
+        <div class="design">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <img id="tiger" src="img/tiger.svg" />
+
+    <footer>
+      <p>
+        junsy0901@naver.com | 2023204069 <br />
+        Designed by 전서연
+      </p>
+    </footer>
+  </body>
+</html>

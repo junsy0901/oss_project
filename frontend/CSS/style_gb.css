@@ -1,0 +1,271 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+/* 요소 속성 초기화 */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* 요소 속성 부여 */
+body {
+  background-color: #1e1e1e;
+}
+
+nav > ul {
+  /* nav */
+
+  width: 1920px;
+  height: 65px;
+  left: 0px;
+  top: 4px;
+}
+nav > ul > li {
+  /* Group 3 */
+  display: inline-block;
+
+  width: 150px;
+  height: 34px;
+  left: 246px;
+  top: 15px;
+
+  background: #fbd043;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+
+  margin: 10px 20px 10px 20px;
+}
+
+nav > ul > .on {
+  background: #638ee3;
+}
+
+nav > ul > li > a {
+  /* Home */
+
+  text-align: center;
+
+  width: 150px;
+  height: 34px;
+
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  color: #000000;
+}
+
+.headertxt {
+  /* DEVELOPER */
+
+  width: 99vw;
+  height: 100px;
+  margin: 10vw 0 -3vw 5vw;
+
+  font-family: "Notable";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 260px;
+  display: flex;
+  align-items: flex-end;
+
+  color: #ffffff;
+}
+
+.wrap {
+  margin: 0 0 4vw 1vw;
+}
+
+footer * {
+  color: #ffffff;
+  position: absolute;
+
+  left: 10px;
+}
+
+.container-background {
+  width: 832px;
+  height: 763px;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  left: 36px;
+  top: 21px;
+  position: absolute;
+  background: #525462;
+  border: 1px white solid;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 14px;
+  display: inline-flex;
+}
+
+.container-background .line {
+  width: 781px;
+  height: 677px;
+  border: 1px white solid;
+  margin: 60px 0 0 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto; /* 스크롤 가능하도록 설정 */
+}
+
+.guest-wrap {
+  width: 742.21px;
+  height: 206px;
+  margin: 10px 0 0 0;
+
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px white solid;
+}
+
+.guest-wrap .text {
+  width: 730px;
+  height: 173px;
+  margin: 4px auto;
+
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px white solid;
+
+  color: black;
+  font-size: 12px;
+  font-family: "Noto Sans KR";
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.guest-wrap .name {
+  display: inline-block;
+
+  margin: 4px 5px 0 0;
+
+  color: black;
+  font-size: 14px;
+  font-family: "Noto Sans KR";
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.guest-wrap .delete-btn {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 12px;
+  font-family: "Noto Sans KR";
+  font-weight: 400;
+  word-wrap: break-word;
+  border: none;
+  margin: 0 0 0 10px;
+}
+
+.date {
+  color: black;
+  font-size: 10px;
+  font-family: "Noto Sans KR";
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.design :nth-child(1) {
+  width: 875px;
+  height: 40px;
+  left: 14px;
+  top: 8px;
+  position: absolute;
+  background: #fbd043;
+  border-radius: 5px;
+}
+.design :nth-child(2) {
+  width: 903px;
+  height: 27px;
+  left: 0px;
+  top: 15px;
+  position: absolute;
+  background: #fbd043;
+  border-radius: 15px;
+}
+.design :nth-child(3) {
+  width: 842px;
+  height: 57px;
+  left: 31px;
+  top: 0px;
+  position: absolute;
+  background: #607bb1;
+  border: 2px white solid;
+}
+
+#tiger {
+  width: 25vw;
+  position: fixed;
+  right: 90px;
+  top: 150px;
+  z-index: -2;
+}
+
+.cloud1 {
+  width: 100vw;
+
+  position: fixed;
+  left: 0;
+  bottom: -10vh;
+
+  margin: 45vh auto;
+  z-index: -1;
+  /* 애니메이션 추가 */
+  animation: moveCloud 60s linear infinite;
+}
+
+.cloud2 {
+  width: 100vw;
+
+  position: fixed;
+  left: -100vw;
+  bottom: -10vh;
+
+  margin: 45vh auto;
+  z-index: -1;
+  /* 애니메이션 추가 */
+  animation: moveCloud 60s linear infinite;
+}
+/* 키프레임 정의 */
+@keyframes moveCloud {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+.add-btn {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  font-family: "Noto Sans KR";
+  font-weight: 400;
+  word-wrap: break-word;
+  background-color: #fbd043;
+  border: none;
+}
+
+textarea {
+  font-size: 12px;
+  font-family: "Noto Sans KR";
+  font-weight: 400;
+}
