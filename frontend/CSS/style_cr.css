@@ -103,17 +103,17 @@ nav > ul > li > a {
 }
 .circle:nth-of-type(2) {
   position: absolute;
-  top: 80vh;
+  top: 83vh;
   left: 49.8vw;
 }
 .circle:nth-of-type(3) {
   position: absolute;
-  top: 147vh;
+  top: 150vh;
   left: 49.8vw;
 }
 .circle:nth-of-type(4) {
   position: absolute;
-  top: 212vh;
+  top: 218vh;
   left: 49.8vw;
 }
 
@@ -155,7 +155,6 @@ nav > ul > li > a {
   font-size: 16px;
   line-height: 120%;
 
-  display: flex;
   align-items: center;
   text-align: right;
 
@@ -179,7 +178,7 @@ nav > ul > li > a {
 
   z-index: 0;
 
-  margin: 40vh 0 0 10vw;
+  margin: 40vh 0 0 11vw;
 }
 
 footer * {
