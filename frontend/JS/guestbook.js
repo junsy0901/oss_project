@@ -1,4 +1,4 @@
-const host = "http://3.211.6.129:8000";
+const host = "http://3.211.6.129:8080";
 const guestWrap = document.querySelector("#guests");
 
 function getGuests() {
